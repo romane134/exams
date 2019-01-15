@@ -6,7 +6,7 @@
 /*   By: rlucas-d <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/01/03 14:17:30 by rlucas-d          #+#    #+#             */
-/*   Updated: 2019/01/03 14:17:34 by rlucas-d         ###   ########.fr       */
+/*   Updated: 2019/01/09 10:13:23 by rlucas-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,4 +33,19 @@ t_list	*sort_list(t_list* lst, int (*cmp)(int, int))
 	}
 	lst = tmp;
 	return (lst);
+}
+
+
+int						(int *a, int size)
+{
+	int i;
+	int j;
+
+	while (i < size - 1)
+	{
+		while (j < size - i - 1)
+		{
+			ft_swap(a[i], a[j]);
+		}
+	}
 }
